@@ -1,0 +1,123 @@
+<html>
+<head>
+<style type="text/css">
+
+/* smart image enlarger starts here */
+/* If your images are not linking to other pages leave the links as <a href="#nogo"> Otherwise enlarger won't work in IE6 */
+
+.ienlarger {
+	float: left;
+	clear: none; /* set to left or right if needed */
+	padding-bottom: 5px; /* space between thumbs. Don't change this to margin */
+	padding-right: 5px; /* space between thumbs and wrapping text when there is any text around it */
+}
+
+.ienlarger a { 
+	display:block;
+	text-decoration: none;
+/* add cursor:default; to this rule to disable the hand cursor */
+}
+
+.ienlarger a:hover{ /* don't move this positioning to normal state */
+ 	position:relative;
+}
+
+.ienlarger span img {
+	border: 1px solid #FFFFFF; /* adds a border around the image */
+	margin-bottom: 8px; /* pushes the text down from the image */
+}
+
+.ienlarger a span {  /* this is for the large image and the caption */
+	position: absolute;
+	display:none;
+	color: white; /* caption text colour */
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px; /* caption text size */
+	background-color: #000000;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 13px;
+	padding-left: 10px;
+}
+
+.ienlarger img { /* leave or IE puts a border around links */
+border-width: 0;
+}
+
+.ienlarger a:hover span { 
+	display:block;
+	top: 5px; /* means the pop-up's top is 50px away from thumb's top */
+	left: 100px; /* means the pop-up's left is 90px far from the thumb's left */
+	z-index: 100;
+	
+/* If you want the pop-up open to the left of thumb, remove the left: 90px; and add  
+right: 90px; This would mean the right side of the pop-up is 90px far from the right side of thumb */	
+
+/* If you want the pop-up open above the thumb, remove the top: 50px; and add  
+bottom: 50px; This would mean the bottom of the pop-up is 50px far from the bottom of thumb */	
+
+/* add cursor:default; to this rule to disable the hand cursor only for the large image */
+}
+
+.resize_thumb {
+	width: 150px; /* enter desired thumb width here */
+	height : auto;
+}
+
+/* smart image enlarger ends here */
+
+</style>
+<style type="text/css">
+td {color:white;}
+h1 {color:white;}
+body {background-color:#1240ab;}
+a:link {color:white;text-decoration:underline;}    /* unvisited link */
+a:visited {color:white;text-decoration:underline;} /* visited link */
+a:hover {color:black;text-decoration:none;}   /* mouse over link */
+a:active {color:black;text-decoration:none;}  /* selected link */
+</style>
+</head>
+<body>
+<h1><p>Jays Top 10 Cars List</p></h1>
+<br>
+<table class="tftable" border="0">
+<tr><td>1.</td><td><div class="ienlarger"><a href="http://upload.wikimedia.org/wikipedia/commons/5/54/Zonda_R_Front_1.jpg">Zonda R<span>
+    <img width="500px" src="http://upload.wikimedia.org/wikipedia/commons/5/54/Zonda_R_Front_1.jpg" alt="Zonda R" /><br />
+    Zonda R</span></a></div></td></tr>
+<tr><td>2.</td><td><div class="ienlarger"><a href="http://www.gtagaming.com/images/mods/1357998484_astonmartinv12vantage01.jpg">Aston Martin V12 Vantage<span>
+    <img width="500px" src="http://www.gtagaming.com/images/mods/1357998484_astonmartinv12vantage01.jpg" alt="Aston Marton V12 Vantage" /><br />
+    Aston Martin V12 Vantage</span></a></div></td></tr>
+<tr><td>3.</td><td><div class="ienlarger"><a href="http://coolmaterial.com/wp-content/uploads/2013/11/nissan-gtr-nismo-2015.jpg">Nissan GTR<span>
+    <img width="500px" src="http://coolmaterial.com/wp-content/uploads/2013/11/nissan-gtr-nismo-2015.jpg" alt="Nissan GTR" /><br />
+    Nissan GTR</span></a></div></td></tr>
+<tr><td>4.</td><td><div class="ienlarger"><a href="http://www.africanspotlight.com/wp-content/uploads/2012/07/2009-bugatti-164-veyron-fbg-par-hermes-full-view.jpg">Bugatti Veyron<span>
+    <img width="500px" src="http://www.africanspotlight.com/wp-content/uploads/2012/07/2009-bugatti-164-veyron-fbg-par-hermes-full-view.jpg" alt="Bugatti Veyron" /><br />
+    Bugatti Veyron</span></a></div></td></tr>
+<tr><td>5.</td><td><div class="ienlarger"><a href="http://www.wired.com/images_blogs/autopia/2009/09/ferrari_458_02.jpg">Ferarri 458<span>
+    <img width="500px" src="http://www.wired.com/images_blogs/autopia/2009/09/ferrari_458_02.jpg" alt="Ferarri 458" /><br />
+    Ferarri 458</span></a></div></td></tr>
+<tr><td>6.</td><td><div class="ienlarger"><a href="http://image.superchevy.com/f/features/camaro/sucp_1004_1967_chevy_camaro_rs_ss/26952512/sucp_1004_01%2B1967_chevy_camaro_rs_ss%2Bgrill.jpg">1967 Chevy Camaro SS<span>
+    <img width="500px" src="http://image.superchevy.com/f/features/camaro/sucp_1004_1967_chevy_camaro_rs_ss/26952512/sucp_1004_01%2B1967_chevy_camaro_rs_ss%2Bgrill.jpg" alt="Chevy Camaro" /><br />
+    1967 Chevy Camaro SS</span></a></div></td></tr>
+<tr><td>7.</td><td><div class="ienlarger"><a href="http://image.motortrend.com/f/features/editorial/1110_the_big_picture_speed_thirlls/34003156/2012-chevrolet-corvette-ZR1-front-three-quarters.jpg">Chevy Corvette ZR1<span>
+    <img width="500px" src="http://image.motortrend.com/f/features/editorial/1110_the_big_picture_speed_thirlls/34003156/2012-chevrolet-corvette-ZR1-front-three-quarters.jpg" alt="Chevy Corvette" /><br />
+    Chevy Corvette ZR1</span></a></div></td></tr>
+<tr><td>8.</td><td><div class="ienlarger"><a href="http://centerlinewheels.com/images/gallery/spinnaker_chevy1991%20454SS_500x280.jpg">Chevy 1500 454SS<span>
+    <img width="500px" src="http://centerlinewheels.com/images/gallery/spinnaker_chevy1991%20454SS_500x280.jpg" alt="Chevy 454SS" /><br />
+    Chevy 1500 454SS</span></a></div></td></tr>
+<tr><td>9.</td><td><div class="ienlarger"><a href="http://www.blogcdn.com/www.autoblog.com/media/2009/08/gt3rs2010_01.jpg">Porsche 911 GT3<span>
+    <img width="500px" src="http://www.blogcdn.com/www.autoblog.com/media/2009/08/gt3rs2010_01.jpg" alt="Porsche 911 GT3" /><br />
+    Porsche 911 GT3</span></a></div></td></tr>
+<tr><td>10.</td><td><div class="ienlarger"><a href="http://www.bmwblog.com/wp-content/uploads/Vorsteiner-BMW-M5-01.jpg">BMW M5<span>
+    <img width="500px" src="http://www.bmwblog.com/wp-content/uploads/Vorsteiner-BMW-M5-01.jpg" alt="BMW M5" /><br />
+    BMW M5</span></a></div></td></tr>
+</table>
+<br>
+<br>
+<a href="index.html"><< Back</a>
+
+
+</body>
+</html>
