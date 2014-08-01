@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script type='text/javascript' src='jquery.min.js'></script>
+    </head>
+	<style>
+		#contact label{
+			display: inline-block;
+			width: 100px;
+			text-align: right;
+		}
+		#contact_submit{
+			padding-left: 100px;
+		}
+		#contact div{
+			margin-top: 1em;
+		}
+		textarea{
+			vertical-align: top;
+			height: 5em;
+		}
+			
+		.error{
+			display: none;
+			margin-left: 10px;
+		}		
+		
+		.error_show{
+			color: red;
+			margin-left: 10px;
+		}
+		
+		input.invalid, textarea.invalid{
+			border: 2px solid red;
+		}
+		
+		input.valid, textarea.valid{
+			border: 2px solid green;
+		}
+	</style>
+	
+	<script>
+		$(document).ready(function() {
+				$('#word_one').on('input', function() {
+					var input=$(this);
+					var is_word_one=input.val();
+					if(is_word_one){input.removeClass("invalid").addClass("valid");}
+					else{input.removeClass("valid").addClass("invalid");}
+				});
+				
+				$('#word_two').on('input', function() {
+					var input=$(this);
+					var is_word_two=input.val();
+					if(is_word_two){input.removeClass("invalid").addClass("valid");}
+					else{input.removeClass("valid").addClass("invalid");}
+				});
+				
+				$('#word_three').on('input', function() {
+					var input=$(this);
+					var is_word_three=input.val();
+					if(is_word_three){input.removeClass("invalid").addClass("valid");}
+					else{input.removeClass("valid").addClass("invalid");}
+				});
+				
+				$('#word_four').on('input', function() {
+					var input=$(this);
+					var is_word_four=input.val();
+					if(is_word_four){input.removeClass("invalid").addClass("valid");}
+					else{input.removeClass("valid").addClass("invalid");}
+				});
+				
+				$('#word_five').on('input', function() {
+					var input=$(this);
+					var is_word_five=input.val();
+					if(is_word_five){input.removeClass("invalid").addClass("valid");}
+					else{input.removeClass("valid").addClass("invalid");}
+				});
+				
+				
+			$("#submit_button").click(function(event){
+				var form_data=$("#wordForm").serializeArray();
+				var error_free=true;
+				for (var input in form_data){
+					var element=$("#word_"+form_data[input]['name']);
+					var valid=element.hasClass("valid");
+					var error_element=$("span", element.parent());
+					if (!valid){error_element.removeClass("error").addClass("error_show"); error_free=false;}
+					else{error_element.removeClass("error_show").addClass("error");}
+				}
+				if (!error_free){
+					event.preventDefault(); 
+				}
+				else{
+					alert('No errors: Form will be submitted');
+				}
+			});
+			
+			
+			
+		});
+	</script>
+	
+    <body>
+			<div>
+				<label for="word_one">First Word:</label>
+				<input type="text" id="word_one" name="word_one"></input>
+				<span class="error">This field is required</span>
+			</div>
+			<div>
+				<label for="word_two">Second Word:</label>
+				<input type="text" id="word_two" name="word_two"></input>
+				<span class="error">This field is required</span>				
+			</div>						
+			<div>
+				<label for="word_three">Third Word:</label>
+				<input type="text" id="word_three" name="word_three"></input>
+				<span class="error">This field is required</span>								
+			</div>						
+			<div>
+				<label for="word_four">Fourth Word:</label>
+				<input type="text" id="word_four" name="word_four"></input>
+				<span class="error">This field is required</span>												
+			</div>				
+			<div>
+				<label for="word_five">Fifth fWord:</label>
+				<input type="text" id="word_five" name="word_five"></input>
+				<span class="error">This field is required</span>												
+			</div>				
+			<div id="word_submit">				
+				<button id="submit_button">Submit</button>
+			</div>
+	</body>
+</html>
+
+      
+    
+
