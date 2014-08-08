@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script type='text/javascript' src='jquery.min.js'></script>
+		<script type='text/javascript' src='jobapp.js'></script>
+		
+    </head>
+
+	
+    <body>
+		
+			<div>
+				<label for="employee_first">First Name:</label>
+				<input type="text" id="employee_first" name="namefirst"></input>
+			</div>
+			<div>
+				<label for="employee_last">Last Name:</label>
+				<input type="text" id="employee_last" name="namesecond"></input>
+			</div>						
+			<div>
+				<label for="employee_address">Address:</label>
+				<input type="text" id="employee_address" name="Address"></input>
+			</div>						
+			<div>
+				<label for="employee_phone">Phone:</label>
+				<input type="text" id="employee_phone" name="phone"></input>
+			</div>			
+			<div>
+				<label for="employee_position">Position:</label>
+				<select id="employee_position" name="position">
+					<option value="janitor">Janitor</option>
+					<option value="mop">Mop Boy</option>
+					<option value="secretary">Secretary</option>
+					<option value="coffee">Coffee Maker</option>
+				</select>
+			</div>				
+			<div id="employee_submit">				
+				<button id="submit_button" type="submit" onclick="myFunction()">Submit</button>
+			</div>
+		<div class="popup">
+		
+		</div>
+	</body>
+</html>
