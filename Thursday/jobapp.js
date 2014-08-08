@@ -5,13 +5,13 @@ function myFunction() {
 		var phone
 		var position
 		
-		nameFirst = document.getElementById("employee_first").value;
-		nameLast = document.getElementById("employee_last").value;
-		employeeAddress = document.getElementById("employee_address").value;
-		phone = document.getElementById("employee_phone").value;
-		position = document.getElementById("employee_position").value;
+		nameFirst = $("#employee_first").val();
+		nameLast = $("#employee_last").val();
+		employeeAddress = $("#employee_address").val();
+		phone = $("#employee_phone").val();
+		position = $("#employee_position").val();
 
 
-
-		$(".popup").append( "<p>" + nameFirst + " " + nameLast + "<br>" + employeeAddress + "<br>" + phone + "</p><p>Welcome " + nameFirst + ",<br>You have been selected for the position " + position + ".<br>Congratulations</p>" );
+		$("#form").hide();
+		$(".popup").html( "<p>" + nameFirst + " " + nameLast + "<br>" + employeeAddress + "<br>" + phone + "</p><p>Welcome " + nameFirst + ",<br>You have been selected for the position " + position + ".<br>Congratulations</p>" );
 };
