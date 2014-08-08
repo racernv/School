@@ -13,5 +13,13 @@ function myFunction() {
 
 
 		$("#form").hide();
-		$(".popup").html( "<p>" + nameFirst + " " + nameLast + "<br>" + employeeAddress + "<br>" + phone + "</p><p>Welcome " + nameFirst + ",<br>You have been selected for the position " + position + ".<br>Congratulations</p>" );
-};
+		$(".popup").show();
+		$(".popup").html( "<p>" + nameFirst + " " + nameLast + "<br>" + employeeAddress + "<br>" + phone + "</p><p>Welcome " + nameFirst + ",<br>You have been selected for the position " + position + '.<br>Congratulations</p><button id="reset_button" type="submit" onclick="myFunction2()">Reset</button>' );
+}
+
+function myFunction2() {
+		$("#form").show();
+		$(".popup").hide();
+
+
+}
